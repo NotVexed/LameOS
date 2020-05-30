@@ -1,0 +1,23 @@
+LibC
+    stdio.h
+    stdlib.h
+    stddef.h
+    string.h
+
+#include <string.h>
+#include <libk/string.h>
+
+src/libc
+src/libk
+src/kernel
+
+LibK
+    string.h
+
+        struct string
+        {
+            char* buf;
+            size_t len;
+        }
+
+        char** split_by_delimiter(char*, char*);
